@@ -1,0 +1,16 @@
+sources:
+  - name: f1
+    schema: raw
+    tables:
+      - name: races
+      - name: results
+      - name: drivers
+      - name: constructors
+      - name: circuits
+      - name: lap_times
+      - name: pit_stops
+      - name: qualifying
+      - name: driver_standings
+      - name: constructor_standings
+      - name: constructor_results
+      - name: sprint_results
