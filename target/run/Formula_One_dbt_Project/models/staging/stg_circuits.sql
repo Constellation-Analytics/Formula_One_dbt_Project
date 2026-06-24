@@ -8,17 +8,20 @@
 ),
 
 renamed as (
-select 
-    "circuitId" as circuit_id,
-    "circuitRef" as circuit_ref,
-    name,
-    location,
-    country,
-    lat as latitude,
-    lng as longitude,
-    alt as altitude
-from 
-    source)
+    select 
+        "circuitId" as circuit_id,
+        "circuitRef" as circuit_ref,
+        name,
+        location,
+        country,
+        lat as latitude,
+        lng as longitude,
+        alt as altitude
+        --url -- excluded (not needed for analysis) 
+
+    from 
+        source
+)
 
 select * from renamed
   );

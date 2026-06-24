@@ -1,17 +1,20 @@
 with source as (
     select
         *
-    from {{ source('f1', 'lap_times') }}
+    from {{ source('f1', 'qualifying') }}
 ),
 
 renamed as (
     select
+        qualifyid as qualify_id,
         raceid as race_id,
         driverid as driver_id,
-        lap,
+        constructorid as constructor_id,
+        number,
         position,
-        time,
-        milliseconds
+        q1,
+        q2,
+        q3
     from 
         source
 )

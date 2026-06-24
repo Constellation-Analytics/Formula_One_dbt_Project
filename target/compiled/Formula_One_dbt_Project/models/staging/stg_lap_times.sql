@@ -12,7 +12,8 @@ renamed as (
         position,
         time,
         milliseconds
-    from source
+    from 
+        source
 )
 
 select * from renamed

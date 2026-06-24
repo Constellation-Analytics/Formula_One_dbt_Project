@@ -5,14 +5,14 @@ with source as (
 ),
 
 renamed as (
-select 
-    constructorresultsid as constructor_results_id,
-    raceid as race_id,
-    constructorid as constructor_id,
-    points,
-    NULLIF(status,'\N') AS status
-from 
-    source
+    select 
+        constructorresultsid as constructor_results_id,
+        raceid as race_id,
+        constructorid as constructor_id,
+        points,
+        NULLIF(status,'\N') AS status
+    from 
+        source
 )
 
 select * from renamed

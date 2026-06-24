@@ -16,8 +16,10 @@ renamed as (
         driverid as driver_id,
         points,
         "position",
+        positiontext,
         wins
-    from source
+    from 
+        source
 )
 
 select * from renamed

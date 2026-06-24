@@ -5,15 +5,16 @@ with source as (
 ),
 
 renamed as (
-select 
-    constructorstandingsid as constructor_standings_id,
-    raceid as race_id,
-    constructorid as constructor_id,
-    points,
-    "position",
-    wins 
-from 
-    source
+    select 
+        constructorstandingsid as constructor_standings_id,
+        raceid as race_id,
+        constructorid as constructor_id,
+        points,
+        "position",
+        positiontext,
+        wins 
+    from 
+        source
 )
 
 select * from renamed

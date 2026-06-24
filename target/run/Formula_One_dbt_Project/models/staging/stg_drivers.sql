@@ -19,7 +19,9 @@ renamed as (
         surname,
         dob as date_of_birth,
         nationality
-    from source
+        --url -- excluded (not needed for analysis) 
+    from 
+        source
 )
 
 select * from renamed

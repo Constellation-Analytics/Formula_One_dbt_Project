@@ -1,17 +1,23 @@
-with source as (
-    select * from "formula_one"."raw"."results"
-),
+
+  create view "formula_one"."dev"."stg_sprint_results__dbt_tmp"
+    
+    
+  as (
+    with source as (
+    select
+        *
+    from "formula_one"."raw"."sprint_results"
+)/*,
 
 renamed as (
-    select 
-        resultid,
-        raceid,
-        driverid,
-        constructorid,
+    select
+        resultid as result_id,
+        raceid as race_id,
+        driverid as driver_id,
+        constructorid as constructor_id,
         number,
         grid,
         NULLIF(position,'\N') AS position,
-        positiontext,
         positionorder,
         points,
         laps,
@@ -22,8 +28,9 @@ renamed as (
         NULLIF(fastestlaptime,'\N') AS fastestlaptime,
         NULLIF(fastestlapspeed,'\N') AS fastestlapspeed,
         statusid
-    from 
+    from
         source
-)
+)*/
 
-select * from renamed
+select * from source
+  );
