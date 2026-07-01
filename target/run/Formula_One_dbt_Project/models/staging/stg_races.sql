@@ -13,7 +13,7 @@ renamed as (
 		year::integer as race_year,
 		round::integer as race_round,
 		circuitid::integer as circuit_id,
-		name::text as race_name,
+		name as race_name,
 		date::date as race_date,
 		NULLIF(time,'\N') AS race_time, 
         --url -- excluded (not needed for analysis) 

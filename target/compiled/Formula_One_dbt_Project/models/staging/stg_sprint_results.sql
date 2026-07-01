@@ -10,19 +10,19 @@ renamed as (
         raceid::integer as race_id,
         driverid::integer as driver_id,
         constructorid::integer as constructor_id,
-        number::integer as driver_number,
-        grid::integer as starting_grid_position,
-        "position"::integer as sprint_result_position,
-        positiontext::text as sprint_result_position_text,
-        positionorder::integer as sprint_result_position_order,
-        points::integer as sprint_points,
-        laps::integer as sprint_laps,
-        "time"::text as sprint_time,
-        milliseconds::integer as sprint_milliseconds,
-        fastestlap::integer as sprint_fastest_lap,
-        fastestlaptime::text as sprint_fastest_lap_time,
-        statusid::integer as sprint_status_id,
-        rank::integer as sprint_rank
+        number as driver_number,
+        grid as starting_grid_position,
+        "position" as sprint_result_position,
+        positiontext as sprint_result_position_text,
+        positionorder as sprint_result_position_order,
+        points as sprint_points,
+        laps as sprint_laps,
+        "time" as sprint_time,
+        milliseconds as sprint_milliseconds,
+        fastestlap as sprint_fastest_lap,
+        fastestlaptime as sprint_fastest_lap_time,
+        statusid as sprint_status_id,
+        rank as sprint_rank
     from
         source
 )

@@ -1,9 +1,7 @@
 
     
     
-    
-    create table "formula_one"."dev"."seed_constructors" ("constructorId" integer,"constructorRef" text,"name" text,"nationality" text,"url" text)
-  ;
+    truncate table "formula_one"."dev"."seed_constructors";
     -- dbt seed --
     
           insert into "formula_one"."dev"."seed_constructors" ("constructorId", "constructorRef", "name", "nationality", "url") values

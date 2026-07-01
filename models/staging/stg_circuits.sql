@@ -5,7 +5,7 @@ with source as (
 renamed as (
     select 
         "circuitId"::integer as circuit_id,
-        "circuitRef"::integer as circuit_ref,
+        "circuitRef" as circuit_ref,
         "name"as circuit_name,
         "location",
         "country",

@@ -12,6 +12,10 @@ drivers as (
 
 constructors as (
     select * from "formula_one"."dev"."stg_constructors"
+),
+
+status as (
+    select * from "formula_one"."dev"."stg_status"
 )
 
 select 
@@ -19,7 +23,9 @@ select
     results.race_id,
     results.driver_id,
     results.constructor_id,
-    results.number,
+    races.circuit_id,
+
+    --results.number,
     results.grid as starting_position,
     results."position" as finishing_position,
     case
@@ -30,40 +36,42 @@ select
         when positionText = 'W' then 'Withdrawn'
         else 'Finished'
     end as race_status,
+    status.status_description as race_status_description,
     --results.positionorder,
     results.points,
     results.laps,
     results.result_time,
     results.milliseconds,
     results.fastestlap,
-    results.rank,
+    --results.rank,
     results.fastestlaptime,
-    results.fastestlapspeed,
-    results.statusid,
+    --results.fastestlapspeed,
+
     races.race_year,
     races.race_round,
-    races.circuit_id,
     races.race_name,
     races.race_date,
-    races.race_time,
-    races.fp1_date,
-    races.fp1_time,
-    races.fp2_date,
-    races.fp2_time,
-    races.fp3_date,
-    races.fp3_time,
-    races.quali_date,
-    races.quali_time,
-    races.sprint_date,
-    races.sprint_time,
-    drivers.driver_ref,
-    drivers.driver_number,
-    drivers.driver_code,
-    drivers.driver_forename,
+    --races.race_time,
+    --races.fp1_date,
+    --races.fp1_time,
+    --races.fp2_date,
+    --races.fp2_time,
+    --races.fp3_date,
+    --races.fp3_time,
+    --races.quali_date,
+    --races.quali_time,
+    --races.sprint_date,
+    --races.sprint_time,
+
+    --drivers.driver_ref,
+    --drivers.driver_number,
+    --drivers.driver_code,
+    drivers.driver_name,
     drivers.driver_surname,
-    drivers.date_of_birth,
+    drivers.driver_date_of_birth,
     drivers.driver_nationality,
-    constructors.constructor_ref,
+
+    --constructors.constructor_ref,
     constructors.constructor_name,
     constructors.constructor_nationality
 from 
@@ -71,3 +79,4 @@ from
     inner join races on results.race_id = races.race_id
     left join drivers on results.driver_id = drivers.driver_id
     left join constructors on results.constructor_id = constructors.constructor_id
+    left join status on results.status_id = status.status_id

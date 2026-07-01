@@ -1,9 +1,7 @@
 
     
     
-    
-    create table "formula_one"."dev"."seed_circuits" ("circuitId" integer,"circuitRef" text,"name" text,"location" text,"country" text,"lat" float8,"lng" float8,"alt" integer,"url" text)
-  ;
+    truncate table "formula_one"."dev"."seed_circuits";
     -- dbt seed --
     
           insert into "formula_one"."dev"."seed_circuits" ("circuitId", "circuitRef", "name", "location", "country", "lat", "lng", "alt", "url") values

@@ -12,13 +12,13 @@
 renamed as (
     select
         driverid::integer as driver_id,
-        driverref::text as driver_ref,
-        number::integer as driver_number,
-        code::text as driver_code,
-        forename::text as driver_forename,
-        surname::text as driver_surname,
-        dob::date as date_of_birth,
-        nationality::text as driver_nationality
+        driverref as driver_ref,
+        number as driver_number,
+        code as driver_code,
+        forename as driver_name,
+        surname as driver_surname,
+        dob::date as driver_date_of_birth,
+        nationality as driver_nationality
         --url -- excluded (not needed for analysis) 
     from 
         source

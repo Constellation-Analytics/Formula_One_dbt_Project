@@ -9,10 +9,10 @@ renamed as (
         constructorstandingsid::integer as constructor_standings_id,
         raceid::integer as race_id,
         constructorid::integer as constructor_id,
-        points::integer as constructor_points,
-        "position"::integer as constructor_position,
-        positiontext::text as constructor_position_text,
-        wins::integer as constructor_wins
+        points as constructor_points,
+        "position" as constructor_position,
+        positiontext as constructor_position_text,
+        wins as constructor_wins
     from 
         source
 )

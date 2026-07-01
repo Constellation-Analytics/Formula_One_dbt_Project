@@ -9,7 +9,7 @@ renamed as (
         constructorresultsid::integer as constructor_results_id,
         raceid::integer as race_id,
         constructorid::integer as constructor_id,
-        points::integer as constructor_points,
+        points as constructor_points,
         NULLIF(status,'\N') AS status
     from 
         source

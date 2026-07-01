@@ -9,10 +9,10 @@
 
 renamed as (
     select 
-        "constructorId"::TEXT as constructor_id,
-        "constructorRef"::TEXT as constructor_ref,
-        name::TEXT as constructor_name,
-        nationality::TEXT as constructor_nationality
+        "constructorId"::integer as constructor_id,
+        "constructorRef" as constructor_ref,
+        name as constructor_name,
+        nationality as constructor_nationality
         --url -- excluded (not needed for analysis) 
 
     from 
