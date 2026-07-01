@@ -1,13 +1,13 @@
 with source as (
-    select * from "formula_one"."dev"."constructors"
+    select * from "formula_one"."dev"."seed_constructors"
 ),
 
 renamed as (
     select 
-        "constructorId" as constructor_id,
-        "constructorRef" as constructor_ref,
-        name,
-        nationality
+        "constructorId"::TEXT as constructor_id,
+        "constructorRef"::TEXT as constructor_ref,
+        name::TEXT as constructor_name,
+        nationality::TEXT as constructor_nationality
         --url -- excluded (not needed for analysis) 
 
     from 

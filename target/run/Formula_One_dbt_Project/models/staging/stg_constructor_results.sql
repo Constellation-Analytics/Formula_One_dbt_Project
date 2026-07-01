@@ -11,10 +11,10 @@
 
 renamed as (
     select 
-        constructorresultsid as constructor_results_id,
-        raceid as race_id,
-        constructorid as constructor_id,
-        points,
+        constructorresultsid::integer as constructor_results_id,
+        raceid::integer as race_id,
+        constructorid::integer as constructor_id,
+        points::integer as constructor_points,
         NULLIF(status,'\N') AS status
     from 
         source

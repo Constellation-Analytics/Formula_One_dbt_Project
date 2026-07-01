@@ -6,13 +6,13 @@ with source as (
 
 renamed as (
     select 
-        constructorstandingsid as constructor_standings_id,
-        raceid as race_id,
-        constructorid as constructor_id,
-        points,
-        "position",
-        positiontext,
-        wins 
+        constructorstandingsid::integer as constructor_standings_id,
+        raceid::integer as race_id,
+        constructorid::integer as constructor_id,
+        points::integer as constructor_points,
+        "position"::integer as constructor_position,
+        positiontext::text as constructor_position_text,
+        wins::integer as constructor_wins
     from 
         source
 )

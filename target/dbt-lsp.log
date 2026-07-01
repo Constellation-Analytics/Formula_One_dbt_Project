@@ -337,3 +337,104 @@
 11:33:18.526702 [info ]: Loading ~/.dbt/profiles.yml
 11:33:20.008638 [info ]: Loading ~/.dbt/profiles.yml
 11:33:25.455835 [info ]: Loading ~/.dbt/profiles.yml
+11:33:31.290686 [info ]: Loading ~/.dbt/profiles.yml
+11:34:11.339077 [info ]: Loading ~/.dbt/profiles.yml
+11:34:11.648709 [info ]: Loading ~/.dbt/profiles.yml
+11:35:42.932424 [info ]: Loading ~/.dbt/profiles.yml
+11:36:01.964505 [info ]: Loading ~/.dbt/profiles.yml
+11:36:08.112449 [info ]: Loading ~/.dbt/profiles.yml
+11:36:08.877824 [info ]: Loading ~/.dbt/profiles.yml
+11:36:12.380793 [info ]: Loading ~/.dbt/profiles.yml
+11:36:13.268139 [info ]: Loading ~/.dbt/profiles.yml
+11:36:17.952922 [info ]: Loading ~/.dbt/profiles.yml
+11:36:18.808216 [info ]: Loading ~/.dbt/profiles.yml
+11:36:23.496195 [info ]: Loading ~/.dbt/profiles.yml
+11:36:24.748892 [info ]: Loading ~/.dbt/profiles.yml
+11:36:29.628312 [info ]: Loading ~/.dbt/profiles.yml
+11:36:30.836508 [info ]: Loading ~/.dbt/profiles.yml
+11:36:35.372409 [info ]: Loading ~/.dbt/profiles.yml
+11:36:36.855077 [info ]: Loading ~/.dbt/profiles.yml
+11:36:41.668260 [info ]: Loading ~/.dbt/profiles.yml
+11:36:42.760869 [info ]: Loading ~/.dbt/profiles.yml
+11:36:45.421649 [info ]: Loading ~/.dbt/profiles.yml
+11:36:52.519385 [info ]: Loading ~/.dbt/profiles.yml
+11:36:55.714488 [info ]: Loading ~/.dbt/profiles.yml
+11:36:56.815591 [info ]: Loading ~/.dbt/profiles.yml
+11:37:04.658733 [info ]: Loading ~/.dbt/profiles.yml
+11:37:05.910025 [info ]: Loading ~/.dbt/profiles.yml
+11:37:24.083642 [info ]: Loading ~/.dbt/profiles.yml
+11:37:35.988289 [info ]: Loading ~/.dbt/profiles.yml
+11:37:41.388349 [info ]: Loading ~/.dbt/profiles.yml
+11:37:48.499777 [info ]: Loading ~/.dbt/profiles.yml
+11:38:00.781257 [info ]: Loading ~/.dbt/profiles.yml
+11:38:03.548481 [info ]: Loading ~/.dbt/profiles.yml
+11:38:24.017098 [info ]: Loading ~/.dbt/profiles.yml
+11:39:20.390326 [info ]: Loading ~/.dbt/profiles.yml
+11:39:21.130136 [info ]: Loading ~/.dbt/profiles.yml
+11:39:34.822126 [info ]: Loading ~/.dbt/profiles.yml
+11:39:35.142091 [info ]: Loading ~/.dbt/profiles.yml
+11:41:28.410746 [info ]: Loading ~/.dbt/profiles.yml
+11:42:33.617771 [info ]: Loading ~/.dbt/profiles.yml
+11:42:34.401219 [info ]: Loading ~/.dbt/profiles.yml
+11:42:34.645713 [info ]: Loading ~/.dbt/profiles.yml
+11:43:03.669272 [info ]: Loading ~/.dbt/profiles.yml
+11:43:36.527587 [info ]: Loading ~/.dbt/profiles.yml
+11:59:00.851472 [info ]: Loading ~/.dbt/profiles.yml
+11:59:02.116912 [info ]: Loading ~/.dbt/profiles.yml
+11:59:03.066211 [info ]: Loading ~/.dbt/profiles.yml
+11:59:16.128305 [info ]: Loading ~/.dbt/profiles.yml
+11:59:30.810579 [info ]: Loading ~/.dbt/profiles.yml
+11:59:47.639433 [info ]: Loading ~/.dbt/profiles.yml
+11:59:59.221637 [info ]: Loading ~/.dbt/profiles.yml
+12:01:02.762738 [info ]: Loading ~/.dbt/profiles.yml
+12:01:08.263362 [info ]: Loading ~/.dbt/profiles.yml
+12:01:43.189415 [info ]: Loading ~/.dbt/profiles.yml
+12:01:47.755681 [info ]: Loading ~/.dbt/profiles.yml
+12:01:53.714082 [info ]: Loading ~/.dbt/profiles.yml
+12:02:03.527045 [info ]: Loading ~/.dbt/profiles.yml
+12:02:04.264230 [info ]: Loading ~/.dbt/profiles.yml
+12:02:16.741870 [info ]: Loading ~/.dbt/profiles.yml
+12:03:13.202964 [info ]: Loading ~/.dbt/profiles.yml
+12:03:17.808714 [info ]: Loading ~/.dbt/profiles.yml
+12:04:02.310369 [info ]: Loading ~/.dbt/profiles.yml
+12:04:10.941244 [info ]: Loading ~/.dbt/profiles.yml
+12:04:20.271582 [info ]: Loading ~/.dbt/profiles.yml
+12:04:31.749186 [info ]: Loading ~/.dbt/profiles.yml
+12:04:47.627042 [info ]: Loading ~/.dbt/profiles.yml
+12:04:49.565565 [info ]: Loading ~/.dbt/profiles.yml
+12:04:51.280055 [info ]: Loading ~/.dbt/profiles.yml
+12:04:52.762914 [info ]: Loading ~/.dbt/profiles.yml
+12:05:04.457367 [info ]: Loading ~/.dbt/profiles.yml
+12:05:05.261128 [info ]: Loading ~/.dbt/profiles.yml
+12:05:52.382765 [info ]: Loading ~/.dbt/profiles.yml
+12:06:16.342066 [info ]: Loading ~/.dbt/profiles.yml
+12:06:16.969272 [info ]: Loading ~/.dbt/profiles.yml
+12:06:17.261772 [info ]: Loading ~/.dbt/profiles.yml
+12:10:12.985080 [info ]: Loading ~/.dbt/profiles.yml
+12:10:13.719552 [info ]: Loading ~/.dbt/profiles.yml
+==================== 2026-06-24T21:16:58.385054Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-24T21:16:58.397650Z | baf902a6-d245-40d4-9003-038849a49dcd ====================
+21:16:58.398508 [info ]: Starting dbt LSP server
+21:16:58.400306 [info ]: Connecting to LSP client on port 8000
+21:16:58.448624 [info ]: Successfully connected to LSP client
+21:16:58.449057 [info ]: Creating LSP service...
+21:16:58.804965 [info ]: Creating LSP server...
+21:16:58.805024 [info ]: Starting LSP server...
+==================== 2026-06-25T12:55:37.415348Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-25T12:55:37.416019Z | 3e53f817-8247-499d-872c-05554f744c1d ====================
+12:55:37.416144 [info ]: Starting dbt LSP server
+12:55:37.416258 [info ]: Connecting to LSP client on port 8000
+12:55:37.427113 [info ]: Successfully connected to LSP client
+12:55:37.427177 [info ]: Creating LSP service...
+12:55:37.571866 [info ]: Creating LSP server...
+12:55:37.571901 [info ]: Starting LSP server...
+12:55:37.925118 [info ]: Loading ~/.dbt/profiles.yml
+==================== 2026-06-25T13:08:41.587541Z | 00000000-0000-0000-0000-000000000000 ====================
+==================== 2026-06-25T13:08:41.598380Z | 7a71d5d9-36ec-40ef-86a5-1d2f62ba5f9f ====================
+13:08:41.599571 [info ]: Starting dbt LSP server
+13:08:41.600801 [info ]: Connecting to LSP client on port 8000
+13:08:41.614878 [info ]: Successfully connected to LSP client
+13:08:41.615197 [info ]: Creating LSP service...
+13:08:41.965231 [info ]: Creating LSP server...
+13:08:41.965270 [info ]: Starting LSP server...
+13:08:42.587986 [info ]: Loading ~/.dbt/profiles.yml

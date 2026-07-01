@@ -1,11 +1,11 @@
 with status as (
-  select * from {{ ref('status') }}
+  select * from {{ ref('seed_status') }}
 ),
 
 renamed as (
   select 
-    "statusId" as status_id,
-    status
+    "statusId"::integer as status_id,
+    status::text as status_description
 from 
   status
 )

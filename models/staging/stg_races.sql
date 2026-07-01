@@ -4,13 +4,13 @@ with source as (
 
 renamed as (
 	select
-		raceid,
-		year,
-		round,
-		circuitid as circuit_id,
-		name as race_name,
-		date,
-		NULLIF(time,'\N') AS time, 
+		raceid::integer as race_id,
+		year::integer as race_year,
+		round::integer as race_round,
+		circuitid::integer as circuit_id,
+		name::text as race_name,
+		date::date as race_date,
+		NULLIF(time,'\N') AS race_time, 
         --url -- excluded (not needed for analysis) 
 		NULLIF(fp1_date,'\N') AS fp1_date,
 		NULLIF(fp1_time,'\N') AS fp1_time,

@@ -6,12 +6,12 @@ with source as (
 
 renamed as (
     select
-        raceid as race_id,
-        driverid as driver_id,
-        lap,
-        position,
-        time,
-        milliseconds
+        raceid::integer as race_id,
+        driverid::integer as driver_id,
+        lap::integer as lap_number,
+        position::integer as lap_position,
+        time::text as lap_time,
+        milliseconds::integer as lap_milliseconds
     from 
         source
 )

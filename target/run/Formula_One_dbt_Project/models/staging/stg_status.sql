@@ -4,13 +4,13 @@
     
   as (
     with status as (
-  select * from "formula_one"."dev"."status"
+  select * from "formula_one"."dev"."seed_status"
 ),
 
 renamed as (
   select 
-    "statusId" as status_id,
-    status
+    "statusId"::integer as status_id,
+    status::text as status_description
 from 
   status
 )
