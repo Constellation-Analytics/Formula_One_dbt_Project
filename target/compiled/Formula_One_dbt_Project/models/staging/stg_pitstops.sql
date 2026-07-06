@@ -8,11 +8,11 @@ renamed as (
     select
         raceid::integer as race_id,
         driverid::integer as driver_id,
-        stop as stop_number,
-        lap as lap_number,
-        time as pit_time,
-        duration as pit_duration,
-        milliseconds as pit_milliseconds
+        nullif(stop, '\N')::int as stop_number,
+        nullif(lap, '\N')::int as lap_number,
+        nullif(time, '\N') as pit_time,
+        NULLIF("duration",'\N') as pit_duration,
+        NULLIF("milliseconds",'\N')::int as pit_milliseconds
     from 
         source
 )

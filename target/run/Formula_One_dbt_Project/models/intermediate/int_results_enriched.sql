@@ -90,5 +90,7 @@ from
     left join drivers on results.driver_id = drivers.driver_id
     left join constructors on results.constructor_id = constructors.constructor_id
     left join status on results.status_id = status.status_id
+ORDER BY 
+    results.race_id desc
   );
   
