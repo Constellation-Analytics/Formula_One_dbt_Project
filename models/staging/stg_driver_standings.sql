@@ -9,10 +9,10 @@ renamed as (
         driverstandingsid::integer as driver_standings_id,
         raceid::integer as race_id,
         driverid::integer as driver_id,
-        points as driver_points,
-        "position" as driver_position,
+        points::numeric(10,2) as driver_points,
+        "position"::integer as driver_position,
         positiontext as driver_position_text,
-        wins as driver_wins
+        wins::integer as driver_wins
     from 
         source
 )
