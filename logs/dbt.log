@@ -53513,3 +53513,56 @@ drop table if exists "formula_one"."dev"."mart_driver_career_stats__dbt_backup" 
 [0m15:32:18.908430 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D377AAA80>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D36B71910>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000022D36B727B0>]}
 [0m15:32:18.909489 [debug] [MainThread]: Flushing usage events
 [0m15:32:19.577448 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m16:46:59.157168 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6BB245EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6BE003D70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6BE0025A0>]}
+
+
+============================== 16:46:59.166143 | e374f8fb-1724-406a-98b6-009c707f67ae ==============================
+[0m16:46:59.166143 [info ] [MainThread]: Running with dbt=1.9.0
+[0m16:46:59.166143 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'indirect_selection': 'eager', 'log_cache_events': 'False', 'write_json': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': 'C:\\Users\\paulj\\.dbt', 'log_path': 'C:\\1.Dev\\git\\Formula_One_dbt_Project\\logs', 'debug': 'False', 'fail_fast': 'False', 'use_colors': 'True', 'use_experimental_parser': 'False', 'no_print': 'None', 'quiet': 'False', 'empty': 'None', 'warn_error_options': 'WarnErrorOptions(include=[], exclude=[])', 'introspect': 'True', 'static_parser': 'True', 'invocation_command': 'dbt list', 'target_path': 'None', 'log_format': 'default', 'send_anonymous_usage_stats': 'True'}
+[0m16:46:59.459019 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'e374f8fb-1724-406a-98b6-009c707f67ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6BE47A480>]}
+[0m16:46:59.551377 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': 'e374f8fb-1724-406a-98b6-009c707f67ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6BD8F99D0>]}
+[0m16:46:59.552888 [info ] [MainThread]: Registered adapter: postgres=1.9.0
+[0m16:46:59.881376 [debug] [MainThread]: checksum: c99e828bba267739642b5a3ce85f17518764ea526e0e6c4fdc649171c1a66bff, vars: {}, profile: , target: , version: 1.9.0
+[0m16:47:00.145196 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m16:47:00.145196 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m16:47:00.231520 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': 'e374f8fb-1724-406a-98b6-009c707f67ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6BF714DA0>]}
+[0m16:47:00.373447 [debug] [MainThread]: Wrote artifact WritableManifest to C:\1.Dev\git\Formula_One_dbt_Project\target\manifest.json
+[0m16:47:00.400655 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\1.Dev\git\Formula_One_dbt_Project\target\semantic_manifest.json
+[0m16:47:00.433902 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': 'e374f8fb-1724-406a-98b6-009c707f67ae', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6BFBF2C90>]}
+[0m16:47:00.433902 [info ] [MainThread]: Formula_One_dbt_Project.intermediate.int_constructor_season_performance
+[0m16:47:00.433902 [info ] [MainThread]: Formula_One_dbt_Project.intermediate.int_driver_season_performance
+[0m16:47:00.433902 [info ] [MainThread]: Formula_One_dbt_Project.intermediate.int_pitstops
+[0m16:47:00.433902 [info ] [MainThread]: Formula_One_dbt_Project.intermediate.int_results_enriched
+[0m16:47:00.433902 [info ] [MainThread]: Formula_One_dbt_Project.mart.mart_driver_career_stats
+[0m16:47:00.433902 [info ] [MainThread]: Formula_One_dbt_Project.staging.stg_circuits
+[0m16:47:00.433902 [info ] [MainThread]: Formula_One_dbt_Project.staging.stg_constructor_results
+[0m16:47:00.433902 [info ] [MainThread]: Formula_One_dbt_Project.staging.stg_constructor_standings
+[0m16:47:00.433902 [info ] [MainThread]: Formula_One_dbt_Project.staging.stg_constructors
+[0m16:47:00.433902 [info ] [MainThread]: Formula_One_dbt_Project.staging.stg_driver_standings
+[0m16:47:00.443924 [info ] [MainThread]: Formula_One_dbt_Project.staging.stg_drivers
+[0m16:47:00.443924 [info ] [MainThread]: Formula_One_dbt_Project.staging.stg_lap_times
+[0m16:47:00.443924 [info ] [MainThread]: Formula_One_dbt_Project.staging.stg_pitstops
+[0m16:47:00.446016 [info ] [MainThread]: Formula_One_dbt_Project.staging.stg_qualifying
+[0m16:47:00.446016 [info ] [MainThread]: Formula_One_dbt_Project.staging.stg_races
+[0m16:47:00.446016 [info ] [MainThread]: Formula_One_dbt_Project.staging.stg_results
+[0m16:47:00.446016 [info ] [MainThread]: Formula_One_dbt_Project.staging.stg_sprint_results
+[0m16:47:00.446016 [info ] [MainThread]: Formula_One_dbt_Project.staging.stg_status
+[0m16:47:00.449942 [info ] [MainThread]: Formula_One_dbt_Project.seed_circuits
+[0m16:47:00.449942 [info ] [MainThread]: Formula_One_dbt_Project.seed_constructors
+[0m16:47:00.452312 [info ] [MainThread]: Formula_One_dbt_Project.seed_status
+[0m16:47:00.452312 [info ] [MainThread]: source:Formula_One_dbt_Project.f1.circuits
+[0m16:47:00.452312 [info ] [MainThread]: source:Formula_One_dbt_Project.f1.constructor_results
+[0m16:47:00.454877 [info ] [MainThread]: source:Formula_One_dbt_Project.f1.constructor_standings
+[0m16:47:00.456439 [info ] [MainThread]: source:Formula_One_dbt_Project.f1.constructors
+[0m16:47:00.456439 [info ] [MainThread]: source:Formula_One_dbt_Project.f1.driver_standings
+[0m16:47:00.456439 [info ] [MainThread]: source:Formula_One_dbt_Project.f1.drivers
+[0m16:47:00.456439 [info ] [MainThread]: source:Formula_One_dbt_Project.f1.lap_times
+[0m16:47:00.456439 [info ] [MainThread]: source:Formula_One_dbt_Project.f1.pitstops
+[0m16:47:00.456439 [info ] [MainThread]: source:Formula_One_dbt_Project.f1.qualifying
+[0m16:47:00.460403 [info ] [MainThread]: source:Formula_One_dbt_Project.f1.races
+[0m16:47:00.460403 [info ] [MainThread]: source:Formula_One_dbt_Project.f1.results
+[0m16:47:00.460403 [info ] [MainThread]: source:Formula_One_dbt_Project.f1.sprint_results
+[0m16:47:00.460403 [debug] [MainThread]: Command `dbt list` succeeded at 16:47:00.460403 after 1.56 seconds
+[0m16:47:00.465331 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6BB245EB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6BDFDBFB0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001C6BDFDB950>]}
+[0m16:47:00.465331 [debug] [MainThread]: Flushing usage events
+[0m16:47:02.284799 [debug] [MainThread]: An error was encountered while trying to flush usage events
