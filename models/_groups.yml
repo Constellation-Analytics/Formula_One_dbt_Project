@@ -1,0 +1,12 @@
+groups:
+  - name: drivers
+    owner:
+      name: "Paul Chapman"
+
+  - name: constructors
+    owner:
+      name: "Paul Chapman"
+
+  - name: races
+    owner:
+      name: "Paul Chapman"

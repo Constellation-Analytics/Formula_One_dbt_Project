@@ -38,5 +38,11 @@ FROM pitstops
     INNER JOIN results ON pitstops.race_id = results.race_id AND pitstops.driver_id = results.driver_id
     INNER JOIN drivers ON pitstops.driver_id = drivers.driver_id
     INNER JOIN constructors ON results.constructor_id = constructors.constructor_id
+
+
+where pitstops.race_id not in (select pitstops.race_id from "formula_one"."dev"."int_pitstops")
+
+
 GROUP BY pitstops.race_id, pitstops.driver_id, races.race_year, races.race_round, races.race_name, races.race_date, drivers.driver_name, drivers.driver_surname, constructors.constructor_name
+
 ORDER BY pitstops.race_id desc

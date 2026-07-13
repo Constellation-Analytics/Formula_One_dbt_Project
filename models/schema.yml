@@ -1,0 +1,128 @@
+models:
+  - name: stg_circuits
+    description: "This model is a staging model for the circuits data. It renames columns and casts data types to make the data more usable for analysis."
+    config:
+      materialized: view
+      tags: ['dimension', 'staging']
+      group: 'races'
+
+  - name: stg_constructor_results
+    description: "This model is a staging model for the constructor results data. It renames columns and casts data types to make the data more usable for analysis."
+    config:
+      materialized: view
+      tags: ['fact', 'staging']
+      group: 'constructors'
+
+  - name: stg_constructor_standings
+    description: "This model is a staging model for the constructor standings data. It renames columns and casts data types to make the data more usable for analysis."
+    config:
+      materialized: view
+      tags: ['fact', 'staging']
+      group: 'constructors'
+  
+  - name: stg_constructors
+    description: "This model is a staging model for the constructors data. It renames columns and casts data types to make the data more usable for analysis."
+    config:
+      materialized: view
+      tags: ['dimension', 'staging']
+      group: 'constructors'
+  
+  - name: stg_driver_standings
+    description: "This model is a staging model for the driver standings data. It renames columns and casts data types to make the data more usable for analysis."
+    config:
+      materialized: view
+      tags: ['fact', 'staging']
+      group: 'drivers'
+
+  - name: stg_drivers
+    description: "This model is a staging model for the drivers data. It renames columns and casts data types to make the data more usable for analysis."
+    config:
+      materialized: view
+      tags: ['dimension', 'staging']
+      group: 'drivers'
+
+  - name: stg_lap_times
+    description: "This model is a staging model for the lap times data. It renames columns and casts data types to make the data more usable for analysis."
+    config:
+      materialized: view
+      tags: ['fact', 'staging']
+      group: 'races'
+
+  - name: stg_pitstops
+    description: "This model is a staging model for the pit stops data. It renames columns and casts data types to make the data more usable for analysis."
+    config: 
+      materialized: view
+      tags: ['fact', 'staging']
+      group: 'races'
+
+  - name: stg_qualifying
+    description: "This model is a staging model for the qualifying data. It renames columns and casts data types to make the data more usable for analysis."
+    config:
+      materialized: view
+      tags: ['fact', 'staging']
+      group: 'races'
+
+  - name: stg_races
+    description: "This model is a staging model for the races data. It renames columns and casts data types to make the data more usable for analysis."
+    config:
+      materialized: view
+      tags: ['fact', 'staging']
+      group: 'races'
+
+  - name: stg_results
+    description: "This model is a staging model for the results data. It renames columns and casts data types to make the data more usable for analysis."
+    config:
+      materialized: view
+      tags: ['fact', 'staging']
+      group: 'races'
+
+  - name: stg_sprint_results
+    description: "This model is a staging model for the sprint results data. It renames columns and casts data types to make the data more usable for analysis."
+    config:
+      materialized: view
+      tags: ['fact', 'staging']
+      group: 'races'
+
+  - name: stg_status
+    description: "This model is a staging model for the status data. It renames columns and casts data types to make the data more usable for analysis."
+    config:
+      materialized: view
+      tags: ['dimension', 'staging']
+      group: 'races'
+
+  - name: int_constructor_season_performance
+    description: "This model is an intermediate model for the constructor season performance data. It aggregates and transforms the data to make it more usable for analysis."
+    config:
+      materialized: table
+      tags: ['fact', 'intermediate']
+      group: 'constructors'
+
+  - name: int_driver_season_performance
+    description: "This model is an intermediate model for the driver season performance data. It aggregates and transforms the data to make it more usable for analysis."
+    config:
+      materialized: table
+      tags: ['fact', 'intermediate']
+      group: 'drivers'
+
+  - name: int_pitstops
+    description: "This model is an intermediate model for the pit stops data. It aggregates and transforms the data to make it more usable for analysis."
+    config:
+      materialized: incremental
+      incremental_strategy: append
+      tags: ['fact', 'intermediate']
+      group: 'races'
+
+  - name: int_results_enriched
+    description: "This model is an intermediate model for the results data. It enriches the data by joining it with other relevant tables to make it more usable for analysis."
+    config:
+      materialized: incremental
+      incremental_strategy: append
+      tags: ['fact', 'intermediate']
+      group: 'races'
+
+  - name: mart_driver_career_stats
+    description: "This model is a mart model for the driver performance data. It aggregates and transforms the data to make it more usable for analysis."
+    config:
+      materialized: table
+      tags: ['fact', 'mart']
+      group: 'drivers'
